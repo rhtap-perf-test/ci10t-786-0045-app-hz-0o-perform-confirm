@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-tfmv
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci10t-786-0045-tenant/ci10t-786-0045-app/devfile-sample-tfmv@sha256:12ffe9374ddaec4e5d5eb70476820d2f9de334f45dc420c7fef0eadc1c652c03
+        name: my-nodejs
+        resources: {}
+status: {}
